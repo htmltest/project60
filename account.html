@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Оборонлогистика</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css" />
+
+        <script src="js/jquery-2.2.2.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=1024" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <ul class="top-menu">
+                            <li><a href="#">Расписание паромов</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                        </ul>
+
+                        <ul class="user-menu">
+                            <li><a href="#">Регистрация</a></li>
+                            <li class="user-menu-cabinet"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="header-inner">
+                        <div class="logo"><img src="images/logo.png" alt="" width="441" height="46" /></div>
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                    <div class="nav-sub">
+                                        <div class="nav-sub-title"><a href="#">Услуги</a></div>
+                                        <ul>
+                                            <li><a href="#">Проверить статус брони</a></li>
+                                            <li><a href="#">Оплатить бронь</a></li>
+                                            <li><a href="#">Возврат билета</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Информация</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+                <!-- cabinet header -->
+                <div class="cabinet-header">
+                    <h1><span>Здравствуйте,</span> Клименко Иван Константинович</h1>
+
+                    <div class="cabinet-contract">
+                        <div class="cabinet-contract-current">Договор № 123-654 от 25.01.2015</div>
+                        <ul>
+                            <li><a href="#">Договор № 123-654 от 25.01.2015</a></li>
+                            <li><a href="#">Договор № 123-654 от 25.01.2015</a></li>
+                            <li><a href="#">Договор № 123-654 от 25.01.2015</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="cabinet-menu">
+                        <li class="active"><a href="#">Профиль</a></li>
+                        <li><a href="#">Мои заказы</a></li>
+                        <li><a href="#">Оформить заказ</a></li>
+                        <li><a href="#">Отчеты</a></li>
+                        <li><a href="#">Сформировать счёт</a></li>
+                        <li><a href="#">Справочники</a></li>
+                    </ul>
+                </div>
+                <!-- cabinet header END -->
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- content wide -->
+                    <div class="content-wide">
+
+                        <!-- account info -->
+                        <div class="account-info">
+                            <div class="form-select">
+                                <select name="COMPANY">
+                                    <option value="ОБЛ/ВДТ-01_699046.00_0.00">ГАЗПРОМСПЕЦТРАНС ООО №ОБЛ/ВДТ-01 от 15.07.2015</option>
+                                </select>
+                            </div>
+                            <div class="account-info-detail">
+                                <dl>
+                                    <dt>Компания</dt>
+                                    <dd>Общество с ограниченной ответственностью ГАЗПРОМСПЕЦТРАНС</dd>
+
+                                    <dt>Адрес</dt>
+                                    <dd>Юридический адрес не указан</dd>
+
+                                    <dt>ИНН</dt>
+                                    <dd>6164319090</dd>
+
+                                    <dt>КПП</dt>
+                                    <dd>616401001</dd>
+
+                                    <dt>ОКПО</dt>
+                                    <dd>616401001</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- account info END -->
+
+                        <!-- account container -->
+                        <div class="account-container">
+                            <div class="account-user">
+                                <h2>Данные пользователя</h2>
+                                <div class="account-user-detail">
+                                    <dl>
+                                        <dt>Фамилия</dt>
+                                        <dd>Клименко</dd>
+
+                                        <dt>Имя</dt>
+                                        <dd>Иван</dd>
+
+                                        <dt>Отчество</dt>
+                                        <dd>Константинович</dd>
+
+                                        <dt>Email</dt>
+                                        <dd><a href="#">mateal@list.ru</a></dd>
+                                    </dl>
+                                </div>
+                                <a href="#" class="btn">Редактировать</a>
+                            </div>
+
+                            <div class="account-password">
+                                <h2>Изменить пароль</h2>
+                                <form action="#" method="post">
+
+                                    <div class="form-row">
+                                        <div class="form-label form-label-2">Старый пароль</div>
+                                        <div class="form-field form-field-3">
+                                            <div class="form-input"><input type="password" name="oldpassword" value="" class="required" /></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-label form-label-2">Новый пароль</div>
+                                        <div class="form-field form-field-3">
+                                            <div class="form-input"><input type="password" name="newpassword" value="" class="required" id="newpassword" /></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-label form-label-2">Повторите пароль</div>
+                                        <div class="form-field form-field-3">
+                                            <div class="form-input"><input type="password" name="repassword" value="" class="required" equalTo="#newpassword" /></div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-submit form-submit-2"><input type="submit" value="Сохранить" /></div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <!-- account container END -->
+
+                    </div>
+                    <!-- content wide END -->
+
+                </div>
+                <!-- content END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <div class="copyrights"><span>© Оборонлогистика,</span> 2015</div>
+
+                <ul class="footer-menu">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <dl class="footer-contacts">
+                    <dt>Адрес</dt>
+                    <dd>120050, Керчь, ул. Кокорина, 14</dd>
+
+                    <dt>Телефон</dt>
+                    <dd>8 800 500-50-50</dd>
+
+                    <dt>Email</dt>
+                    <dd>info@oboronlogistika.ru</dd>
+                </dl>
+
+                <div class="developer"><a href="#"><img src="images/bilingo.png" alt="" width="69" height="24" /></a></div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

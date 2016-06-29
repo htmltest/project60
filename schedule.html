@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Оборонлогистика</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css" />
+
+        <script src="js/jquery-2.2.2.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=1024" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <ul class="top-menu">
+                            <li><a href="#">Расписание паромов</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                        </ul>
+
+                        <ul class="user-menu">
+                            <li><a href="#">Регистрация</a></li>
+                            <li class="user-menu-cabinet"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="header-inner">
+                        <div class="logo"><img src="images/logo.png" alt="" width="441" height="46" /></div>
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                    <div class="nav-sub">
+                                        <div class="nav-sub-title"><a href="#">Услуги</a></div>
+                                        <ul>
+                                            <li><a href="#">Проверить статус брони</a></li>
+                                            <li><a href="#">Оплатить бронь</a></li>
+                                            <li><a href="#">Возврат билета</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Информация</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+                <!-- content -->
+                <div class="content">
+                    <div class="schedule-header">
+                        <h1>Расписание движения паромов</h1>
+                        <div class="current-time">Текущее время: 14:11</div>
+                    </div>
+
+                    <!-- schedule -->
+                    <div class="schedule">
+
+                        <!-- schedule item -->
+                        <div class="schedule-item">
+                            <div class="schedule-points">
+                                <div class="schedule-point">
+                                    <div class="schedule-point-title">A</div>
+                                    <div class="schedule-point-text">порт Кавказ<br />причал 24</div>
+                                </div>
+                                <div class="schedule-point">
+                                    <div class="schedule-point-title">B</div>
+                                    <div class="schedule-point-text">порт КМРП<br />причал</div>
+                                </div>
+                            </div>
+                            <div class="schedule-list-headers">
+                                <div class="schedule-list-header">отправление</div>
+                                <div class="schedule-list-header">Прибытие</div>
+                            </div>
+                            <div class="schedule-list">
+                                <div class="schedule-list-item">
+                                    <a href="#" class="disabled">
+                                        <div class="schedule-list-time-start">11:00</div>
+                                        <div class="schedule-list-text">
+                                            <div class="schedule-list-arrow"></div>
+                                            <div class="schedule-list-text-inner">забронировать</div>
+                                        </div>
+                                        <div class="schedule-list-time-end">13:00</div>
+                                    </a>
+                                 </div>
+                                <div class="schedule-list-item">
+                                    <a href="#">
+                                        <div class="schedule-list-time-start">19:00</div>
+                                        <div class="schedule-list-text">
+                                            <div class="schedule-list-arrow"></div>
+                                            <div class="schedule-list-text-inner">забронировать</div>
+                                        </div>
+                                        <div class="schedule-list-time-end">21:00</div>
+                                    </a>
+                                 </div>
+                                <div class="schedule-list-item">
+                                    <a href="#">
+                                        <div class="schedule-list-time-start">03:00</div>
+                                        <div class="schedule-list-text">
+                                            <div class="schedule-list-arrow"></div>
+                                            <div class="schedule-list-text-inner">забронировать</div>
+                                        </div>
+                                        <div class="schedule-list-time-end">05:00</div>
+                                    </a>
+                                 </div>
+                            </div>
+                        </div>
+                        <!-- schedule item END -->
+
+                        <!-- schedule item -->
+                        <div class="schedule-item">
+                            <div class="schedule-points">
+                                <div class="schedule-point">
+                                    <div class="schedule-point-title">A</div>
+                                    <div class="schedule-point-text">порт КМРП<br />причал</div>
+                                </div>
+                                <div class="schedule-point">
+                                    <div class="schedule-point-title">B</div>
+                                    <div class="schedule-point-text">порт Кавказ<br />причал 24</div>
+                                </div>
+                            </div>
+                            <div class="schedule-list-headers">
+                                <div class="schedule-list-header">отправление</div>
+                                <div class="schedule-list-header">Прибытие</div>
+                            </div>
+                            <div class="schedule-list">
+                                <div class="schedule-list-item">
+                                    <a href="#" class="disabled">
+                                        <div class="schedule-list-time-start">11:00</div>
+                                        <div class="schedule-list-text">
+                                            <div class="schedule-list-arrow"></div>
+                                            <div class="schedule-list-text-inner">забронировать</div>
+                                        </div>
+                                        <div class="schedule-list-time-end">13:00</div>
+                                    </a>
+                                 </div>
+                                <div class="schedule-list-item">
+                                    <a href="#">
+                                        <div class="schedule-list-time-start">19:00</div>
+                                        <div class="schedule-list-text">
+                                            <div class="schedule-list-arrow"></div>
+                                            <div class="schedule-list-text-inner">забронировать</div>
+                                        </div>
+                                        <div class="schedule-list-time-end">21:00</div>
+                                    </a>
+                                 </div>
+                                <div class="schedule-list-item">
+                                    <a href="#">
+                                        <div class="schedule-list-time-start">03:00</div>
+                                        <div class="schedule-list-text">
+                                            <div class="schedule-list-arrow"></div>
+                                            <div class="schedule-list-text-inner">забронировать</div>
+                                        </div>
+                                        <div class="schedule-list-time-end">05:00</div>
+                                    </a>
+                                 </div>
+                            </div>
+                        </div>
+                        <!-- schedule item END -->
+
+                    </div>
+                    <!-- schedule END -->
+
+                </div>
+                <!-- content END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <div class="copyrights"><span>© Оборонлогистика,</span> 2015</div>
+
+                <ul class="footer-menu">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <dl class="footer-contacts">
+                    <dt>Адрес</dt>
+                    <dd>120050, Керчь, ул. Кокорина, 14</dd>
+
+                    <dt>Телефон</dt>
+                    <dd>8 800 500-50-50</dd>
+
+                    <dt>Email</dt>
+                    <dd>info@oboronlogistika.ru</dd>
+                </dl>
+
+                <div class="developer"><a href="#"><img src="images/bilingo.png" alt="" width="69" height="24" /></a></div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

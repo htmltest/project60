@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Оборонлогистика</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css" />
+
+        <script src="js/jquery-2.2.2.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=1024" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <ul class="top-menu">
+                            <li><a href="#">Расписание паромов</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                        </ul>
+
+                        <ul class="user-menu">
+                            <li><a href="#">Регистрация</a></li>
+                            <li class="user-menu-cabinet"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="header-inner">
+                        <div class="logo"><img src="images/logo.png" alt="" width="441" height="46" /></div>
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                    <div class="nav-sub">
+                                        <div class="nav-sub-title"><a href="#">Услуги</a></div>
+                                        <ul>
+                                            <li><a href="#">Проверить статус брони</a></li>
+                                            <li><a href="#">Оплатить бронь</a></li>
+                                            <li><a href="#">Возврат билета</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Информация</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+                <!-- content -->
+                <div class="content">
+                    <h1>Тарифы</h1>
+
+                    <blockquote>Предельный максимальный уровень цен (тарифов) на услуги по перевозкам пассажиров, багажа, автомобильных транспортных средств, железнодорожного подвижного состава с использованием судов, обеспечивающих сообщение между морскими портами Республики Крым, г. Севастополя и морскими портами Краснодарского края по направлениям: порт Кавказ — порт Керчь (включая терминал Крым); порт Керчь (включая терминал Крым) — порт Кавказ</blockquote>
+                    <h2>I. Морская перевозка пассажиров, багажа</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">№<br />п/п</th>
+                                <th>Наименование услуг</th>
+                                <th style="text-align:center">Ед.<br />Изм</th>
+                                <th style="text-align:center">Предельный максимальный уровень цен<br />(тарифов) с учетом НДС (руб.)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align:center; vertical-align:top; color:#000"><strong>1.</strong></td>
+                                <td>Морская перевозка взрослых пассажиров, а так же детей в возрасте от 12 лет до 18 лет</td>
+                                <td style="text-align:center">чел.</td>
+                                <td style="text-align:center">150,00</td>
+                            </tr>
+                            <tr class="subtable-header">
+                                <td style="text-align:center; vertical-align:top; color:#000"><strong>2.</strong></td>
+                                <td colspan="3">Морская перевозка детей:</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center; vertical-align:top; color:#000; border-top:none; padding-top:0"><strong>2.1.</strong></td>
+                                <td style="padding-left:40px; border-top:none; padding-top:0">до 6 лет</td>
+                                <td style="text-align:center; border-top:none; padding-top:0">чел.</td>
+                                <td style="text-align:center; border-top:none; padding-top:0">0</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center; vertical-align:top; color:#000; border-top:none; padding-top:0"><strong>2.2.</strong></td>
+                                <td style="padding-left:40px; border-top:none; padding-top:0">от 6 лет до 12 лет</td>
+                                <td style="text-align:center; border-top:none; padding-top:0">чел.</td>
+                                <td style="text-align:center; border-top:none; padding-top:0">80,00</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center; vertical-align:top; color:#000"><strong>3.</strong></td>
+                                <td>Морская перевозка багажа сверх норм бесплатного провоза каютного багажа <span class="text-footnote">*</span></td>
+                                <td style="text-align:center">за 1 кг</td>
+                                <td style="text-align:center">10,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><span class="text-footnote">*</span> Норма бесплатного провоза каютного багажа на пассажира составляет 25 кг.</p>
+
+                    <h2>II. Морская перевозка легковых автотранспортных средств и прицепов к ним, в том числе организация их погрузки на (с) морские суда (морских судов), швартовка и отшвартовка судов</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">№<br />п/п</th>
+                                <th>Наименование услуг</th>
+                                <th style="text-align:center">Ед.<br />Изм</th>
+                                <th style="text-align:center">Предельный максимальный уровень цен<br />(тарифов) с учетом НДС (руб.)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="color:#000"><strong>1. Морская перевозка легковых автомобилей (Категория М1<span class="text-footnote">*</span>):</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>1.1</strong></td>
+                                <td>Морская перевозка легкового автомобиля<span class="text-footnote">**</span> длиной до 5 м 30 см</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">1 700,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>1.2</strong></td>
+                                <td>Морская перевозка легкового автомобиля<span class="text-footnote">**</span> длиной свыше 5 м 30 см</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">4 800,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>2</strong></td>
+                                <td>Морская перевозка прицепа к легковому автомобилю (Категория О<span class="text-footnote">*</span>)</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">1 500,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><span class="text-footnote">*</span> Категории в настоящем приказе определены на основании положений Технического регламента Таможенного Союза ТР ТС 018/2011 «О безопасности колесных транспортных средств», утвержденного Решением Комиссии Таможенного союза от 09.12.2011 № 877 «О принятии технического регламента Таможенного союза «О безопасности колесных транспортных средств».</p>
+                    <p><span class="text-footnote">**</span> Включает длину соединительного устройства прицепа и груза, выступающего за задний борт прицепа. Длина легкового автомобиля определяется согласно ГОСТ Р 52389-2005.</p>
+
+                    <h2>III. Морская перевозка грузовых автотранспортных средств, в том числе организация их погрузки на (с) морские суда (морских судов), швартовка и отшвартовка судов</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">№<br />п/п</th>
+                                <th>Наименование услуг</th>
+                                <th style="text-align:center">Ед.<br />Изм</th>
+                                <th style="text-align:center">Предельный максимальный уровень цен<br />(тарифов) с учетом НДС (руб.)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="color:#000"><strong>МОРСКАЯ ПЕРЕВОЗКА ГРУЗОВЫХ АВТОТРАНСПОРТНЫХ СРЕДСТВ<span class="text-footnote">*</span>:</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>1.</strong></td>
+                                <td>Грузовой автомобиль, тягач, длиной<span class="text-footnote">**</span> до 5 м</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">5 000,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>2.</strong></td>
+                                <td>Грузовой автомобиль, тягач или прицеп (полуприцеп) длиной от 5,01 м до 9 м</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">6 500,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>3.</strong></td>
+                                <td>Грузовой автомобиль, или прицеп (полуприцеп) длиной от 9,01 до 12 м</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">8 000,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>4.</strong></td>
+                                <td>Прицеп или полуприцеп длиной от 12,01 м до 20 м</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">13 000,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><span class="text-footnote">*</span> В соответствии с терминологией, установленной Соглашением о массах и габаритах транспортных средств, осуществляющих межгосударственные перевозки по автомобильным дорогам государств - участников Содружества Независимых Государств (Минск, 4 июня 1999 г.) (Бюллетень международных договоров. 2000. № 12); утверждено постановлением Правительства Российской Федерации от 08.04.2000 № 314(Собрание законодательства РФ, 2000, № 16, ст. 1707).</p>
+                    <p><span class="text-footnote">**</span> Включает длину соединительного устройства прицепа и груза, выступающего за задний борт прицепа. Длина автомобиля определяется согласно ГОСТ Р 52389-2005. Негабаритными считаются транспортные средства размеры которых превышают следующие параметры: по длине более 20 м (допускается свес груза на 2 м, если общая длина не превышает 20 м); по ширине более 2,55 м. При фактической длине транспортного средства более 20 м, или ширине АТС более 2,55 м применяется повышающий коэффициент 2. При фактической длине транспортного средства более 20 м и ширине АТС более 2,55 м применяется повышающий коэффициент 3.</p>
+
+                    <h2>IV. Морская перевозка автобусов, в том числе организация их погрузки на (с) морские суда (морских судов), швартовка и отшвартовка судов</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">№<br />п/п</th>
+                                <th>Наименование услуг</th>
+                                <th style="text-align:center">Ед.<br />Изм</th>
+                                <th style="text-align:center">Предельный максимальный уровень цен<br />(тарифов) с учетом НДС (руб.)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="color:#000"><strong>МОРСКАЯ ПЕРЕВОЗКА АВТОБУСОВ<span class="text-footnote">*</span>:</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>1.</strong></td>
+                                <td>Автобусы длиной до 10 м.<span class="text-footnote">**</span> до 5 м</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">3 000,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>2.</strong></td>
+                                <td>Автобусы длиной свыше 10 м. (в том числе сочлененные автобусы)</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">50 00,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><span class="text-footnote">*</span> В соответствии с терминологией, установленной Соглашением о массах и габаритах транспортных средств, осуществляющих межгосударственные перевозки по автомобильным дорогам государств - участников Содружества Независимых Государств (Минск, 4 июня 1999 г.) (Бюллетень международных договоров. 2000. № 12); утверждено постановлением Правительства Российской Федерации от 08.04.2000 № 314(Собрание законодательства РФ, 2000, № 16, ст. 1707).</p>
+
+                    <h2>V. Морская перевозка прочих наземных транспортных средств (мотоциклов, трициклов, квадроциклов, велосипедов, мопедов, скутеров)</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">№<br />п/п</th>
+                                <th>Наименование услуг</th>
+                                <th style="text-align:center">Ед.<br />Изм</th>
+                                <th style="text-align:center">Предельный максимальный уровень цен<br />(тарифов) с учетом НДС (руб.)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="color:#000"><strong>МОРСКАЯ ПЕРЕВОЗКА ПРОЧИХ НАЗЕМНЫХ ТРАНСПОРТНЫХ СРЕДСТВ:</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>1.</strong></td>
+                                <td style="text-align:center">—</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">150,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>2.</strong></td>
+                                <td style="text-align:center">L1, L2</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">300,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>3.</strong></td>
+                                <td style="text-align:center">L3, L4</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">500,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>4.</strong></td>
+                                <td style="text-align:center">L5</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">600,00</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top; color:#000"><strong>5.</strong></td>
+                                <td style="text-align:center">L6, L7</td>
+                                <td style="text-align:center">ед.</td>
+                                <td style="text-align:center">700,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><span class="text-footnote">*</span> Тарифы могут быть изменены в соответствии с распоряжением ГУП РК «Крымские морские порты» в связи с изменением действующего законодательства Российской Федерации, законодательства Республики Крым, издание нормативно правовых Актов Министерства транспорта РФ, Министерства транспорта Республики Крым, Правил пользования автомобильной паромной переправой, иных нормативно-правовыми Актами</p>
+
+                </div>
+                <!-- content END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <div class="copyrights"><span>© Оборонлогистика,</span> 2015</div>
+
+                <ul class="footer-menu">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <dl class="footer-contacts">
+                    <dt>Адрес</dt>
+                    <dd>120050, Керчь, ул. Кокорина, 14</dd>
+
+                    <dt>Телефон</dt>
+                    <dd>8 800 500-50-50</dd>
+
+                    <dt>Email</dt>
+                    <dd>info@oboronlogistika.ru</dd>
+                </dl>
+
+                <div class="developer"><a href="#"><img src="images/bilingo.png" alt="" width="69" height="24" /></a></div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

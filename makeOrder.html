@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Оборонлогистика</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css" />
+
+        <script src="js/jquery-2.2.2.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=1024" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <ul class="top-menu">
+                            <li><a href="#">Расписание паромов</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                        </ul>
+
+                        <ul class="user-menu">
+                            <li><a href="#">Регистрация</a></li>
+                            <li class="user-menu-cabinet"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="header-inner">
+                        <div class="logo"><img src="images/logo.png" alt="" width="441" height="46" /></div>
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                    <div class="nav-sub">
+                                        <div class="nav-sub-title"><a href="#">Услуги</a></div>
+                                        <ul>
+                                            <li><a href="#">Проверить статус брони</a></li>
+                                            <li><a href="#">Оплатить бронь</a></li>
+                                            <li><a href="#">Возврат билета</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Информация</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+                <!-- cabinet header -->
+                <div class="cabinet-header">
+                    <h1><span>Здравствуйте,</span> Клименко Иван Константинович</h1>
+
+                    <div class="cabinet-contract">
+                        <div class="cabinet-contract-current">Договор № 123-654 от 25.01.2015</div>
+                        <ul>
+                            <li><a href="#">Договор № 123-654 от 25.01.2015</a></li>
+                            <li><a href="#">Договор № 123-654 от 25.01.2015</a></li>
+                            <li><a href="#">Договор № 123-654 от 25.01.2015</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="cabinet-menu">
+                        <li><a href="#">Профиль</a></li>
+                        <li><a href="#">Мои заказы</a></li>
+                        <li class="active"><a href="#">Оформить заказ</a></li>
+                        <li><a href="#">Отчеты</a></li>
+                        <li><a href="#">Сформировать счёт</a></li>
+                        <li><a href="#">Справочники</a></li>
+                    </ul>
+                </div>
+                <!-- cabinet header END -->
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- content wide -->
+                    <div class="content-wide">
+                        <h2>Оформить заказ</h2>
+                        <form action="#" method="post">
+
+                            <div class="form-row">
+                                <div class="form-label">Грузовое транспортное средство</div>
+                                <div class="form-field">
+                                    <div class="form-select">
+                                        <select name="GTS">
+                                            <option value="9591">F929XC34</option>
+                                            <option value="9594">А777АА77</option>
+                                            <option value="9596">О456ОН190</option>
+                                            <option value="9595">ф123см50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-btn"><a href="#" class="btn">Мои транспортные средства</a></div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Длина</div>
+                                <div class="form-field">
+                                    <div class="form-number"><input type="number" name="vehicle_met" value="" placeholder="длина" step="0.1" min="0" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Ширина</div>
+                                <div class="form-field">
+                                    <div class="form-number"><input type="number" name="vehicle_width" value="" placeholder="ширина" step="0.1" min="0" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Высота</div>
+                                <div class="form-field">
+                                    <div class="form-number"><input type="number" name="vehicle_height" value="" placeholder="высота" step="0.1" min="0" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Водитель</div>
+                                <div class="form-field">
+                                    <div class="form-select">
+                                        <select name="DRIVER">
+                                            <option value="0">Без водителя</option>
+                                            <option value="42612">Фамилия Имя Отчество</option>
+                                            <option value="42624">ФАМИЛИЯ Имя отчество</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Направление</div>
+                                <div class="form-field">
+                                    <div class="form-select">
+                                        <select name="direction">
+                                            <option value="2">Порт КАВКАЗ &gt; Порт КМРП</option>
+                                            <option value="1">Порт КМРП &gt; Порт КАВКАЗ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">ТТН</div>
+                                <div class="form-field">
+                                    <div class="form-input"><input type="text" name="TTN" value="" placeholder="№ от дд.мм.гг" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Категория груза</div>
+                                <div class="form-field">
+                                    <div class="form-select">
+                                        <select name="CATEGRY">
+                                            <option value="1">Детское питание:</option>
+                                            <option value="2">Детское питание: Каши , смеси молочные</option>
+                                            <option value="3">Детское питание: Соки</option>
+                                            <option value="4">Детское питание: Консервы мясные, овощные, фруктовые</option>
+                                            <option value="5">Мука пшеничная</option>
+                                            <option value="6">Мука ржаная</option>
+                                            <option value="7">Крупа рисовая</option>
+                                            <option value="8">Крупа гречневая</option>
+                                            <option value="9">Макаронные изделия</option>
+                                            <option value="10">Кондитерские и мучные изделия</option>
+                                            <option value="11">Конфетные изделия</option>
+                                            <option value="12">Колбасные изделия и копчености:</option>
+                                            <option value="13">Колбасные изделия и копчености: Колбасы вареные, сардели, сосиски</option>
+                                            <option value="14">Колбасные изделия и копчености: Колбасы копчёные, сыровяленые</option>
+                                            <option value="15">Мясо говядины</option>
+                                            <option value="16">Мясо свинины</option>
+                                            <option value="17">Мясо кур</option>
+                                            <option value="18">Рыба и рыбопродукты:</option>
+                                            <option value="19">Рыба и рыбопродукты: рыба свежая</option>
+                                            <option value="20">Рыба и рыбопродукты: рыба копченая</option>
+                                            <option value="21">Рыба и рыбопродукты: рыба соленая</option>
+                                            <option value="22">Рыба и рыбопродукты: рыба живая, рыбопосадочный материал</option>
+                                            <option value="23">Рыбные консервы</option>
+                                            <option value="24">Масло подсолнечное (фасованное, нефасованное)</option>
+                                            <option value="25">Сало свежее, соленое, копченое</option>
+                                            <option value="26">Молокопродукты:</option>
+                                            <option value="27">Молокопродукты: молоко питьевое</option>
+                                            <option value="28">Молокопродукты: Сливки</option>
+                                            <option value="29">Молокопродукты: Кефир, ряженка</option>
+                                            <option value="30">Молокопродукты: Йогурты</option>
+                                            <option value="31">Молокопродукты: Сметана</option>
+                                            <option value="32">Молокопродукты: Творог</option>
+                                            <option value="33">Молокопродукты: Сыр твердый</option>
+                                            <option value="34">Молокопродукты: Сыры плавленые</option>
+                                            <option value="35">Молокопродукты: Брынза</option>
+                                            <option value="36">Молоко сгущенное</option>
+                                            <option value="37">Масло сливочное</option>
+                                            <option value="38">Маргарин</option>
+                                            <option value="39">Майонез</option>
+                                            <option value="40">Мороженое</option>
+                                            <option value="41">Яйцо столовое</option>
+                                            <option value="42">Картофель</option>
+                                            <option value="43">Лук репчатый</option>
+                                            <option value="44">Капуста белокочанная</option>
+                                            <option value="45">Морковь столовая</option>
+                                            <option value="46">Свекла</option>
+                                            <option value="47">Огурцы свежие</option>
+                                            <option value="48">Томаты свежие</option>
+                                            <option value="49">Перец сладкий свежий</option>
+                                            <option value="50">Яблоки</option>
+                                            <option value="51">Персик</option>
+                                            <option value="52">Клубника</option>
+                                            <option value="53">Черешня</option>
+                                            <option value="54">Виноград</option>
+                                            <option value="55">Цитрусовые, бананы</option>
+                                            <option value="56">Медицинские препараты</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-btn"><a href="#" class="btn">Добавить категорию груза</a></div>
+                            </div>
+
+                            <div class="form-cargos">
+                                <div class="form-row">
+                                    <div class="form-label">Макаронные изделия</div>
+                                    <div class="form-btn form-btn-3"><a href="#" class="btn btn-del">Удалить</a></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-label">Детское питание: Каши, смеси молочные</div>
+                                    <div class="form-btn form-btn-3"><a href="#" class="btn btn-del">Удалить</a></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Груз: Опасный, Рефрижератор, Таможенный</div>
+                                <div class="form-field">
+                                    <div class="form-checkboxes">
+                                        <div class="form-checkbox"><span><input type="checkbox" name="hazardous" /></span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Прицепы</div>
+                                <div class="form-field">
+                                    <div class="form-number"><input type="text" name="triler_total" value="0" readonly="readonly" /></div>
+                                </div>
+                                <div class="form-btn form-btn-2"><a href="#" class="btn">Добавить прицеп</a></div>
+                                <div class="form-btn form-btn-3"><a href="#" class="btn btn-del">Удалить</a></div>
+                            </div>
+
+                            <div class="form-trilers">
+                                <div class="form-triler">
+                                    <div class="form-label">Прицеп 1</div>
+                                    <div class="form-triler-content">
+                                        <div class="form-row">
+                                            <div class="form-label">ГРЗ прицепа</div>
+                                            <div class="form-field">
+                                                <div class="form-number"><input type="text" name="triler_number[]" value="" placeholder="Государственый регистрационный знак" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-label">Длина, м</div>
+                                            <div class="form-field">
+                                                <div class="form-number"><input type="number" name="triler_met[]" value="" placeholder="длина" step="0.1" min="0" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-label">Ширина, м</div>
+                                            <div class="form-field">
+                                                <div class="form-number"><input type="number" name="triler_width[]" value="" placeholder="ширина" step="0.01" min="0" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-triler">
+                                    <div class="form-label">Прицеп 1</div>
+                                    <div class="form-triler-content">
+                                        <div class="form-row">
+                                            <div class="form-label">ГРЗ прицепа</div>
+                                            <div class="form-field">
+                                                <div class="form-number"><input type="text" name="triler_number[]" value="" placeholder="Государственый регистрационный знак" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-label">Длина, м</div>
+                                            <div class="form-field">
+                                                <div class="form-number"><input type="number" name="triler_met[]" value="" placeholder="длина" step="0.1" min="0" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-label">Ширина, м</div>
+                                            <div class="form-field">
+                                                <div class="form-number"><input type="number" name="triler_width[]" value="" placeholder="ширина" step="0.01" min="0" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Общая длина</div>
+                                <div class="form-field">
+                                    <div class="form-number"><input type="number" name="all_met" value="" placeholder="Общая длина ТС и прицепа, м" step="0.1" min="0" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Общий вес, тонн</div>
+                                <div class="form-field">
+                                    <div class="form-number"><input type="number" name="vehicle_ton" value="" placeholder="Общий вес, тонн" step="0.1" min="0" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Количество сопровождающих</div>
+                                <div class="form-field">
+                                    <div class="form-number"><input type="number" name="count_adult" value="" step="1" min="0" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label">Дата отправления</div>
+                                <div class="form-field">
+                                    <div class="form-date"><input type="text" name="booking_date" value="" class="required" /></div>
+                                </div>
+                            </div>
+
+                            <div class="order-info">
+                                <h2>Информация о бронировании</h2>
+                                <div class="form-row">
+                                    <div class="form-label">Направление</div>
+                                    <div class="form-text">ПОРТ КМРП → ПОРТ КАВКАЗ</div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-label">Дата отправления</div>
+                                    <div class="form-text">16.04.2016 <span>(дата и время отправления по московскому времени)</span></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-label">Количество сопровождающих</div>
+                                    <div class="form-text">0 человек – <strong>0 руб</strong></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-label">Негабаритный груз</div>
+                                    <div class="form-text">Гос.номер А111АА  – <strong>6500 руб</strong></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-label">Итого</div>
+                                    <div class="form-text"><strong>6500.00 руб</strong><span>, в т.ч. НДС 1170.00 руб.</span></div>
+                                </div>
+                            </div>
+
+                            <div class="form-submit"><input type="submit" value="Забронировать" /></div>
+
+                        </form>
+                    </div>
+                    <!-- content wide END -->
+
+                </div>
+                <!-- content END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <div class="copyrights"><span>© Оборонлогистика,</span> 2015</div>
+
+                <ul class="footer-menu">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <dl class="footer-contacts">
+                    <dt>Адрес</dt>
+                    <dd>120050, Керчь, ул. Кокорина, 14</dd>
+
+                    <dt>Телефон</dt>
+                    <dd>8 800 500-50-50</dd>
+
+                    <dt>Email</dt>
+                    <dd>info@oboronlogistika.ru</dd>
+                </dl>
+
+                <div class="developer"><a href="#"><img src="images/bilingo.png" alt="" width="69" height="24" /></a></div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

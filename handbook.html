@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Оборонлогистика</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css" />
+
+        <script src="js/jquery-2.2.2.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=1024" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <ul class="top-menu">
+                            <li><a href="#">Расписание паромов</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                        </ul>
+
+                        <ul class="user-menu">
+                            <li><a href="#">Регистрация</a></li>
+                            <li class="user-menu-cabinet"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="header-inner">
+                        <div class="logo"><img src="images/logo.png" alt="" width="441" height="46" /></div>
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                    <div class="nav-sub">
+                                        <div class="nav-sub-title"><a href="#">Услуги</a></div>
+                                        <ul>
+                                            <li><a href="#">Проверить статус брони</a></li>
+                                            <li><a href="#">Оплатить бронь</a></li>
+                                            <li><a href="#">Возврат билета</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Информация</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+                <!-- cabinet header -->
+                <div class="cabinet-header">
+                    <h1><span>Здравствуйте,</span> Клименко Иван Константинович</h1>
+
+                    <div class="cabinet-contract">
+                        <div class="cabinet-contract-current">Договор № 123-654 от 25.01.2015</div>
+                        <ul>
+                            <li><a href="#">Договор № 123-654 от 25.01.2015</a></li>
+                            <li><a href="#">Договор № 123-654 от 25.01.2015</a></li>
+                            <li><a href="#">Договор № 123-654 от 25.01.2015</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="cabinet-menu">
+                        <li><a href="#">Профиль</a></li>
+                        <li><a href="#">Мои заказы</a></li>
+                        <li><a href="#">Оформить заказ</a></li>
+                        <li><a href="#">Отчеты</a></li>
+                        <li><a href="#">Сформировать счёт</a></li>
+                        <li class="active"><a href="#">Справочники</a></li>
+                    </ul>
+                </div>
+                <!-- cabinet header END -->
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- content wide -->
+                    <div class="content-wide">
+                        <h2>Справочники</h2>
+
+                        <div class="handbook-header">
+                            <h3>Мои транспортные средства</h3>
+                            <div class="handbook-add"><a href="#" class="btn">Добавить</a></div>
+                        </div>
+
+                        <table class="table-info">
+                            <thead>
+                                <tr>
+                                    <th class="active down"><a href="#">Гос.номер</a></th>
+                                    <th><a href="#">Длина</a></th>
+                                    <th><a href="#">Тип ТС</a></th>
+                                    <th><a href="#">Вид ТС</a></th>
+                                    <th><a href="#">Марка</a></th>
+                                    <th><a href="#">Модель</a></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">А111АА</a></td>
+                                    <td>6.000</td>
+                                    <td>Лесовоз</td>
+                                    <td>Грузовое транспортное средство</td>
+                                    <td>Белаз</td>
+                                    <td>Патруль</td>
+                                    <td class="handbook-edit-link"><a href="#" class="btn">Редактировать</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">А666АА</a></td>
+                                    <td>2.000</td>
+                                    <td>Легковое ТС</td>
+                                    <td>Грузовое транспортное средство</td>
+                                    <td>Nissan</td>
+                                    <td>Pathfinder RC2</td>
+                                    <td class="handbook-edit-link"><a href="#" class="btn">Редактировать</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="handbook-header">
+                            <h3>Список водителей</h3>
+                            <div class="handbook-add"><a href="#" class="btn">Добавить</a></div>
+                        </div>
+
+                        <table class="table-info">
+                            <thead>
+                                <tr>
+                                    <th class="active down"><a href="#">Телефон</a></th>
+                                    <th><a href="#">Фамилия</a></th>
+                                    <th><a href="#">Имя</a></th>
+                                    <th><a href="#">Очество</a></th>
+                                    <th><a href="#">Дата рождения</a></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">79151234567</a></td>
+                                    <td>Дмитриев</td>
+                                    <td>Дмитрий</td>
+                                    <td>Дмитриевич</td>
+                                    <td>1993-02-24</td>
+                                    <td class="handbook-edit-link"><a href="#" class="btn">Редактировать</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">79151234567</a></td>
+                                    <td>Сергеев</td>
+                                    <td>Сергей</td>
+                                    <td>Сергеевич</td>
+                                    <td>1977-07-13</td>
+                                    <td class="handbook-edit-link"><a href="#" class="btn">Редактировать</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- content wide END -->
+
+                </div>
+                <!-- content END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <div class="copyrights"><span>© Оборонлогистика,</span> 2015</div>
+
+                <ul class="footer-menu">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <dl class="footer-contacts">
+                    <dt>Адрес</dt>
+                    <dd>120050, Керчь, ул. Кокорина, 14</dd>
+
+                    <dt>Телефон</dt>
+                    <dd>8 800 500-50-50</dd>
+
+                    <dt>Email</dt>
+                    <dd>info@oboronlogistika.ru</dd>
+                </dl>
+
+                <div class="developer"><a href="#"><img src="images/bilingo.png" alt="" width="69" height="24" /></a></div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>
