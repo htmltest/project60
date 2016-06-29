@@ -57,6 +57,7 @@ form+form {margin-top:60px}
 .form-field-3 {width:270px}
 .form-field-4 {width:200px}
 .form-field-5 {width:170px}
+.form-field-6 {width:470px}
 .form-btn {float:left; width:270px; margin:0 0 0 30px}
 .form-btn-2 {width:170px}
 .form-btn-3 {width:90px; margin:0 0 0 10px}
@@ -127,7 +128,7 @@ form+form {margin-top:60px}
 .account-password .form-submit-2 input {width:270px}
 .form-submit-3 {margin:20px 0}
 .form-submit-3 {text-align:left; padding-left:100px}
-.form-submit-3 input {height:40px; line-height:36px}
+.form-submit-3 input {height:40px; line-height:36px; width:470px}
 
 .form-trilers {margin:20px -30px 40px -30px; background:#f7fafc; padding:0 30px; position:relative}
 .form-trilers:before {content:""; display:block; width:0; height:0; position:absolute; left:51px; top:0; border-top:13px solid #fff; border-left:13px solid transparent; border-right:13px solid transparent}
@@ -230,7 +231,7 @@ nav > ul > li:hover .nav-sub {display:block}
 
 .registration-hint {margin:40px 0 0 200px; width:328px; border:1px solid #deeaf2; font-size:14px; text-align:center; background:#f1f6fa; padding:18px 20px 20px 20px; position:relative}
 .registration-hint:after {content:""; display:block; width:39px; height:21px; background:url(../images/registration-hint.png); position:absolute; left:50%; top:-21px; margin-left:-20px}
-.registration-hint-2 {margin-left:55px; width:418px}
+.registration-hint-2 {margin-left:100px; width:428px}
 
 footer {height:180px; position:relative; margin:-180px 0 0 0; background:#fff; position:relative}
 .footer-inner {width:940px; margin:0 auto}
@@ -392,3 +393,5 @@ footer {height:180px; position:relative; margin:-180px 0 0 0; background:#fff; p
 .window-order .form-row {margin:10px 0}
 .window-order h2:first-child {margin-top:0}
 .window-order .form-text {float:none; margin-left:300px}
+
+.authorization-text {font-size:14px; background:#fff; padding:18px 30px 22px 30px; width:510px; margin:-10px 0 40px 0}
