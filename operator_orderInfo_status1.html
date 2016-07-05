@@ -139,8 +139,13 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- window END -->
 
                         <div class="order-detail">
+                            <div class="form-row form-row-status form-row-status1">
+                                <div class="form-label">Статус заказа</div>
+                                <div class="form-text">Отправлен на доплату</div>
+                            </div>
                             <div class="form-row">
                                 <div class="form-label">Направление</div>
                                 <div class="form-text">ПОРТ КМРП → ПОРТ КАВКАЗ</div>
@@ -187,17 +192,168 @@
                             </div>
                             <div class="form-row form-row-summ">
                                 <div class="form-label">Стоимость заказа</div>
-                                <div class="form-text">6950 руб.</div>
+                                <div class="form-text">6950 руб.
+                                    <div class="order-info-hint">Оплачено 24.05.2015 в 14:56</div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="order-detail-ctrl order-status-paid">
-                            <div class="order-detail-title">Ожидает оплату</div>
-                            <div class="order-detail-ctrl-links">
-                                <div class="order-detail-ctrl-paid"><a href="#">Оплатить</a></div>
-                                <div class="order-detail-ctrl-cancel"><a href="#">Отменить бронирование</a></div>
+                        <div class="order-detail-paid-links order-detail-paid-links-2">
+                            <a href="#" class="btn btn-order">Отправить заявку</a>
+                            <a href="#order-cashback" class="btn btn-cashback">Оформить заявление на возврат средств</a>
+                            <a href="#order-info" class="btn">Информация по брони</a>
+                        </div>
+
+                        <h2>История доплат</h2>
+
+                        <table class="table-info table-info-2">
+                            <thead>
+                                <tr>
+                                    <th class="active down"><a href="#">Дата</a></th>
+                                    <th><a href="#">Доплата, руб</a></th>
+                                    <th><a href="#">Гос. Номер</a></th>
+                                    <th><a href="#">Новая длина, м.</a></th>
+                                    <th><a href="#">Новая ширина, м.</a></th>
+                                    <th><a href="#">Новая общая длина, м</a></th>
+                                    <th><a href="#">Статус</a></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2016-04-12 12:51:14</td>
+                                    <td>6500</td>
+                                    <td>F929XC34</td>
+                                    <td>9</td>
+                                    <td>2.56</td>
+                                    <td>20</td>
+                                    <td class="order-status-item"><div class="order-status order-status-paid"><div>Оплачено</div></div></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2016-04-12 12:51:14</td>
+                                    <td>6500</td>
+                                    <td>F929XC34</td>
+                                    <td><strong>10</strong></td>
+                                    <td>2.56</td>
+                                    <td>20</td>
+                                    <td class="order-status-item"><div class="order-status order-status-paid"><div>Оплачено</div></div></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2016-04-12 12:51:14</td>
+                                    <td>0</td>
+                                    <td>F929XC34</td>
+                                    <td><strong>9,2</strong></td>
+                                    <td><strong>2.6</strong></td>
+                                    <td>20</td>
+                                    <td class="order-status-item"><div class="order-status order-status-paid"><div>Оплачено</div></div></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2016-04-12 12:51:14</td>
+                                    <td>6500</td>
+                                    <td>F929XC34</td>
+                                    <td><strong>9,3</strong></td>
+                                    <td><strong>2.61</strong></td>
+                                    <td><strong>20.1</strong></td>
+                                    <td class="order-status-item"><div class="order-status order-status-wait"><div>Ожидает оплату</div></div></td>
+                                    <td><a href="#" class="btn">Оплатить</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>Билет</h2>
+
+                        <div class="tiket">
+                            <div class="tiket-preview"><img src="files/ticket.jpg" alt="" width="158" height="246" /></div>
+                            <div class="tiket-info">
+                                <div class="tiket-info-header">
+                                    <div class="tiket-info-title">
+                                        <strong>Гос.номер : F929XC341</strong>
+                                        ЗАЯВКА № OBL/262 -2	-129691460454633
+                                    </div>
+                                    <a href="#" class="btn btn-tiket-info-print">Распечатать билет</a>
+                                    <a href="#" class="btn btn-tiket-info-pdf">Скачать в PDF</a>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="order-detail-operator-back"><a href="#" class="btn">Вернуться к списку заказов</a></div>
+
+                        <!-- window -->
+                        <div class="window" id="order-tariff">
+                            <div class="window-overlay"></div>
+                            <div class="window-container">
+                                <div class="window-content">
+                                    <div class="window-cashback">
+                                        <h2>Смена тарифа к заказу №13022</h2>
+                                        <h3>Новые весогабаритные данные</h3>
+                                        <form action="#" method="post">
+                                            <div class="tariff-form">
+                                                <div class="tariff-form-col">
+                                                    <div class="form-row">
+                                                        <div class="form-label">Сумма оплаченная</div>
+                                                        <div class="form-field">
+                                                            <div class="form-input"><input type="text" name="summ" value="6500" readonly="readonly" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tariff-form-col">
+                                                    <div class="form-row">
+                                                        <div class="form-label">Сумма доплаты</div>
+                                                        <div class="form-field">
+                                                            <div class="form-input"><input type="text" name="summadd" value="0" /></div>
+                                                        </div>
+                                                        <a href="#" class="tariff-update"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tariff-form">
+                                                <div class="tariff-form-col">
+                                                    <div class="form-row">
+                                                        <div class="tariff-form-col-in">
+                                                            <div class="form-label">ГРЗ</div>
+                                                            <div class="form-field">
+                                                                <div class="form-input"><input type="text" name="grz" value="К237КО82" readonly="readonly" /></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tariff-form-col-in">
+                                                            <div class="form-label">Длина</div>
+                                                            <div class="form-field">
+                                                                <div class="form-number"><input type="number" name="vehicle_met" value="7.5" placeholder="длина" step="0.1" min="0" /></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tariff-form-col">
+                                                    <div class="form-row">
+                                                        <div class="tariff-form-col-in">
+                                                            <div class="form-label">Ширина</div>
+                                                            <div class="form-field">
+                                                                <div class="form-input"><input type="number" name="vehicle_width" value="2.500" placeholder="ширина" step="0.1" min="0" /></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tariff-form-col-in">
+                                                            <div class="form-label">Общая длина</div>
+                                                            <div class="form-field">
+                                                                <div class="form-input"><input type="number" name="all_met" value="7.5" placeholder="общая длина" step="0.1" min="0" /></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tariff-submits">
+                                                <div class="form-submit form-submit-2"><input type="submit" value="Сохранить" /></div>
+                                                <a href="#" class="btn">Отменить</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <a href="#" class="window-close">Закрыть</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- window END -->
 
                     </div>
                     <!-- content wide END -->

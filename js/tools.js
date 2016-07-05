@@ -58,18 +58,30 @@
             });
         });
 
-        $('.order-success-info-link a').click(function(e) {
-            $.ajax({
-                type: 'POST',
-                url: $(this).attr('href'),
-                dataType: 'html',
-                cache: false
-            }).done(function(html) {
-                if ($('.window').length > 0) {
-                    windowClose();
-                }
-                windowOpen(html);
-            });
+        $('.order-success-info-link a, .order-detail-paid-links a, .order-detail-operator-links a').click(function(e) {
+            var windowId = $(this).attr('href');
+            windowOpen($(windowId));
+            e.preventDefault();
+        });
+
+        $('.window-cashback-rules-inner').jScrollPane();
+
+        $('.window-overlay').click(function() {
+            windowClose();
+        });
+
+        $('.window-close, .window-cashback-close a, .tariff-submits .btn').click(function(e) {
+            windowClose();
+            e.preventDefault();
+        });
+
+        $('body').bind('keyup', keyUpBody);
+
+        $('.filter-toggle a').click(function(e) {
+            $('#f1, #f2').toggleClass('filter-closed');
+            var curText = $(this).html();
+            $(this).html($(this).data('text'));
+            $(this).data('text', curText);
             e.preventDefault();
         });
 
@@ -92,41 +104,29 @@
         $('body').css({'margin-left': -curScrollLeft});
         $('body').data('scrollLeft', curScrollLeft);
 
-        $('body').append('<div class="window"><div class="window-overlay"></div><div class="window-container"><div class="window-content">' + contentWindow + '<a href="#" class="window-close">Закрыть</a></div></div></div>')
+        contentWindow.addClass('visible');
 
         windowPosition();
-
-        $('.window-overlay').click(function() {
-            windowClose();
-        });
-
-        $('.window-close').click(function(e) {
-            windowClose();
-            e.preventDefault();
-        });
-
-        $('body').bind('keyup', keyUpBody);
-
     }
 
     function windowPosition() {
         var windowWidth     = $(window).width();
         var windowHeight    = $(window).height();
 
-        if ($('.window-container').width() > windowWidth - 40) {
-            $('.window-container').css({'left': 20, 'margin-left': 0});
-            $('.window-overlay').width($('.window-container').width() + 40);
+        if ($('.visible .window-container').width() > windowWidth - 100) {
+            $('.visible .window-container').css({'left': 50, 'margin-left': 0});
+            $('.visible .window-overlay').width($('.visible .window-container').width() + 100);
         } else {
-            $('.window-container').css({'left': '50%', 'margin-left': -$('.window-container').width() / 2});
-            $('.window-overlay').width('100%');
+            $('.visible .window-container').css({'left': '50%', 'margin-left': -$('.visible .window-container').width() / 2});
+            $('.visible .window-overlay').width('100%');
         }
 
-        if ($('.window-container').height() > windowHeight - 40) {
-            $('.window-overlay').height($('.window-container').height() + 40);
-            $('.window-container').css({'top': 20, 'margin-top': 0});
+        if ($('.visible .window-container').height() > windowHeight - 100) {
+            $('.visible .window-overlay').height($('.visible .window-container').height() + 100);
+            $('.visible .window-container').css({'top': 50, 'margin-top': 0});
         } else {
-            $('.window-container').css({'top': '50%', 'margin-top': -$('.window-container').height() / 2});
-            $('.window-overlay').height('100%');
+            $('.visible .window-container').css({'top': '50%', 'margin-top': -$('.visible .window-container').height() / 2});
+            $('.visible .window-overlay').height('100%');
         }
     }
 
@@ -137,8 +137,7 @@
     }
 
     function windowClose() {
-        $('body').unbind('keyup', keyUpBody);
-        $('.window').remove();
+        $('.window').removeClass('visible');
         $('body').css({'height': '100%', 'overflow': 'visible', 'padding-right': 0, 'margin': 0});
         $(window).scrollTop($('body').data('scrollTop'));
         $(window).scrollLeft($('body').data('scrollLeft'));

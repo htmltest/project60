@@ -57,7 +57,7 @@ form+form {margin-top:60px}
 .form-field-3 {width:270px}
 .form-field-4 {width:200px}
 .form-field-5 {width:170px}
-.form-field-6 {width:470px}
+.form-field-7 {width:470px}
 .form-btn {float:left; width:270px; margin:0 0 0 30px}
 .form-btn-2 {width:170px}
 .form-btn-3 {width:90px; margin:0 0 0 10px}
@@ -381,8 +381,10 @@ footer {height:180px; position:relative; margin:-180px 0 0 0; background:#fff; p
 .order-detail-ctrl-cancel {float:left; width:299px; font-size:14px; line-height:60px; text-transform:uppercase; text-align:center}
 .order-detail-ctrl-cancel a {text-decoration:none}
 
-.window {position:absolute; left:0; top:0; width:100%; height:100%; z-index:99997; overflow:auto}
-.window-overlay {position:absolute; left:0; top:0; width:100%; height:100%; z-index:99998; background:#000; opacity:.8}
+.window {position:fixed; left:-9999px; top:-9999px; width:100%; height:100%; z-index:99997; overflow:auto}
+.window.visible {left:0; top:0}
+.window-overlay {position:absolute; left:-9999px; top:-9999px; width:100%; height:100%; z-index:99998; background:#000; opacity:.8}
+.window.visible .window-overlay {left:0; top:0}
 .window-container {position:absolute; z-index:99999; left:50%; top:50%}
 .window-content {position:relative; background:#fff}
 .window-close {display:block; position:absolute; right:0; top:-36px; background:#005e9d; color:#fff; text-decoration:none; padding:0 40px 0 20px; font-size:12px; text-transform:uppercase; line-height:36px}
@@ -395,3 +397,129 @@ footer {height:180px; position:relative; margin:-180px 0 0 0; background:#fff; p
 .window-order .form-text {float:none; margin-left:300px}
 
 .authorization-text {font-size:14px; background:#fff; padding:18px 30px 22px 30px; width:510px; margin:-10px 0 40px 0}
+
+.account-sms-list:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.account-sms-col {float:left; width:470px}
+.account-sms-col:first-child {padding:0 30px 0 0}
+.account-sms-list .form-checkbox {float:left; clear:left; margin-top:19px; padding-left:45px}
+.account-sms-list .form-checkbox span.checked {background-color:#005e9d; border-color:#005e9d}
+.account-sms .form-submit {margin:38px 0 0 0; padding:0}
+.account-sms .form-submit input {width:270px}
+
+.order-success-header {padding:21px 0 0 0}
+
+.order-detail-paid-info {border:1px solid #e0ebf3; background:#f7fafc; padding:35px 38px 38px 38px; margin:54px 0 0 0; color:#005e9d; text-transform:uppercase; font-size:20px; line-height:24px}
+.order-detail-paid-info:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.order-detail-paid-info-date {float:left}
+.order-detail-paid-info-sms {float:right}
+
+.order-detail-paid-links {margin:40px 0 0 0}
+.order-detail-paid-links:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.order-detail-paid-links .btn {float:left; width:266px}
+.order-detail-paid-links .btn+.btn {width:366px; margin:0 0 0 30px}
+.order-detail-paid-links .btn+.btn+.btn {width:266px}
+
+.order-detail-paid-back {text-align:center; font-size:14px; text-transform:uppercase; margin:50px 0}
+.order-detail-paid-back a {text-decoration:none}
+
+.window-cashback {width:770px; padding:41px 100px 0 100px}
+.window-cashback .table-info .form-checkbox {margin-top:0}
+.window-cashback .table-info {border-bottom:1px solid #09f}
+.window-cashback .table-info td {vertical-align:top; font-size:12px}
+.window-cashback form {margin:0}
+.window-cashback-rules {background:#f7fafc; font-size:14px; padding:20px 12px 20px 30px; margin:40px 0 27px 0}
+.window-cashback-rules-inner {position:relative; max-height:360px; overflow:hidden}
+.window-cashback .form-submit {padding:0; margin:52px 0 0 0}
+.window-cashback .form-submit input {background:#005e9d; border-color:#005e9d; color:#fff; width:100%}
+.window-cashback .form-submit input:hover {background:#09f; border-color:#09f}
+.window-cashback-close {text-align:center; font-size:14px; text-transform:uppercase; padding:35px 0}
+.window-cashback-close a {text-decoration:none}
+
+.filter-toggle a {float:right; font-size:14px; text-transform:uppercase; position:relative; text-decoration:none; margin:-80px 0 0 0}
+.filter-toggle a:before {content:""; display:inline-block; width:15px; height:9px; vertical-align:middle; background:url(../images/filter-toggle.png); margin:-2px 10px 0 0}
+.filter-closed {position:absolute; left:-9999px; top:-9999px}
+.filter-closed+.filter-toggle {text-align:right}
+.filter-closed+.filter-toggle a {float:none; margin:0}
+.filter-closed+.filter-toggle a:before {background-position:left -9px}
+.filter-closed+.filter-toggle a.active:after {content:""; display:inline-block; vertical-align:middle; width:18px; height:18px; background:url(../images/filter-has.png); margin:0 0 0 10px}
+
+.dataTables_info strong {display:inline-block; width:120px}
+.dataTables_info-bottom {line-height:30px; padding:2px 0 0 0}
+.dataTables_info-bottom strong {display:inline-block; width:120px}
+
+#example td {font-size:12px; line-height:15px}
+
+.order-detail .form-row-status {margin:20px -30px 10px -30px; padding:8px 29px 20px 29px; border:1px solid #bfeffc; background:#effbfe; border-radius:3px}
+.order-detail .form-row-status1 {background:#fffcbf; border-color:#fff200}
+.order-detail .form-row-status2 {background:#f8fbf3; border-color:#e2f1cf}
+.order-info-hint {display:inline-block; vertical-align:top; background:#f7fafc; border:1px solid #e0ebf3; font-size:14px; line-height:38px; padding:0 20px; font-weight:normal; color:#000; margin:-10px 0 0 20px; border-radius:3px}
+.order-info-hint+.order-info-hint {margin-left:5px}
+
+.order-detail-operator-links {border-top:2px solid #005e9d; padding:40px 0 0 0; margin:40px 0 0 0}
+.order-detail-paid-links-2 {border-top:2px solid #005e9d; padding:40px 0 0 0; margin:40px 0 0 0}
+.order-detail-operator-links:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.order-detail-operator-links .btn {float:right; width:266px; margin:0 0 0 30px}
+.order-detail-operator-links .btn:first-child {float:left; margin:0}
+.btn-order {background:#005e9d; border-color:#005e9d; color:#fff}
+.btn-order:hover {background:#09f; border-color:#09f}
+.btn-cashback {color:#f00; border-color:#ffbfbf}
+.btn-cashback:hover {border-color:#f00}
+.order-detail-paid-links-2 .btn-cashback:first-child {margin:0 0 0 300px; width:366px}
+.order-detail-paid-links-2 .btn-cashback:first-child+.btn {width:266px}
+
+.order-detail-operator-back {background:#eaf3f8; margin:52px -100px -20px -100px; text-align:center; padding:30px 0}
+.order-detail-operator-back .btn {display:inline-block; vertical-align:top; width:304px}
+.order-detail-operator-back .btn:before {content:""; display:inline-block; vertical-align:middle; width:17px; height:9px; background:url(../images/back.png); margin:-2px 20px 0 0}
+
+.tariff-form:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.tariff-form-col {float:right; width:370px}
+.tariff-form-col:first-child {float:left}
+.tariff-form .form-label {width:auto; padding-right:0}
+.tariff-form .form-field {width:180px; margin:0 0 0 30px}
+.tariff-form-col-in {float:left; width:170px; margin:0 0 0 30px}
+.tariff-form-col-in:first-child {margin:0}
+.tariff-form-col-in .form-label {float:none; padding:0 0 20px 0}
+.tariff-form-col-in .form-field {float:none; width:auto; margin:0}
+
+.tariff-update {float:left; margin:10px 0 0 16px; width:25px; height:20px; background:url(../images/update.png)}
+.tariff-submits {padding:40px 0 60px 100px}
+.tariff-submits:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.tariff-submits .form-submit {float:left; margin:0 30px 0 0}
+.tariff-submits .form-submit input {width:270px}
+.tariff-submits .btn {float:left; width:266px}
+
+.tiket:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.tiket-preview {float:left; line-height:0; width:158px; border:1px solid #e3edf4}
+.tiket-info {float:right; width:770px}
+.tiket-info-header:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.tiket-info-title {float:left; text-transform:uppercase; font-size:14px}
+.tiket-info-title strong {display:block; font-size:15px; color:#005e9d}
+.tiket-info-print {float:right; text-transform:uppercase; font-size:12px; padding:0 0 0 33px; line-height:21px; margin:11px 0 0 0; background:url(../images/icon-print.png) no-repeat left center; text-decoration:none}
+.tiket-info-pdf {float:right; text-transform:uppercase; font-size:12px; padding:0 0 0 30px; margin:11px 30px 0 0; line-height:21px; background:url(../images/icon-pdf.png) no-repeat left center; text-decoration:none}
+
+.table-info-2 {border-bottom:1px solid #09f}
+
+.tiket-info-statuses {font-size:14px; text-align:center; line-height:40px; text-transform:uppercase; padding:51px 0 0 0}
+.tiket-info-statuses:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.tiket-info-status {float:left; width:250px; height:40px; margin:0 0 0 10px; border-radius:2px; color:#fff}
+.tiket-info-status:first-child {margin:0}
+.tiket-info-status-1 {background:#00d2f1}
+.tiket-info-status-2 {background:#0de9f4}
+.tiket-info-status-3 {background:#fe5c25}
+.tiket-info-reg {font-size:14px; text-align:center; line-height:40px; text-transform:uppercase; padding:20px 0 0 0}
+.tiket-info-reg:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.tiket-info-reg a {float:left; width:380px; height:40px; margin:0 0 0 10px; border-radius:2px; color:#fff; background:#00d684; text-decoration:none}
+.tiket-info-reg a:first-child {margin:0}
+
+.table-info-2 .btn {background:#005e9d; border-color:#005e9d; color:#fff; width:126px}
+.table-info-2 .btn:hover {background:#09f; border-color:#09f}
+
+.tiket-info-header .btn {float:left; clear:left; width:266px; margin:41px 0 0 0; text-align:left}
+.tiket-info-header .btn+.btn {margin:20px 0 0 0}
+.btn-tiket-info-print:before {content:""; display:inline-block; vertical-align:middle; width:20px; height:20px; background:url(../images/icon-print.png); margin:0 20px 0 48px}
+.btn-tiket-info-pdf:before {content:""; display:inline-block; vertical-align:middle; width:17px; height:21px; background:url(../images/icon-pdf.png); margin:0 22px 0 48px}
+
+.order-detail-operator-links .btn-right:first-child {float:right}
+
+.order-success {text-align:center; font-size:14px; text-transform:uppercase; background:#f7fafc; border:1px solid #e0ebf3; border-radius:3px; padding:25px 0 31px 0; margin:60px 0 0 0}
+.order-success strong {display:block; font-size:15px; color:#005e9d}

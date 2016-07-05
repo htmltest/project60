@@ -96,27 +96,154 @@
                     <!-- content wide -->
                     <div class="content-wide">
 
-                        <div class="orders-header">
-                            <h2>Мои заказы</h2>
+                        <h2>Мои заказы</h2>
 
-                            <div class="search">
-                                <form action="#" method="post">
-                                    <div class="form-input"><input type="text" name="search" value="" placeholder="Поиск" /></div>
-                                    <div class="search-submit"><input type="submit" value="" /></div>
-                                </form>
+                        <form id="f2" name="f2">
+                            <div class="form-row">
+                                <div class="form-label form-label-4">Номер заказа:</div>
+                                <div class="form-field">
+                                    <div class="form-input"><input id="order_f2"></div>
+                                </div>
+                                <div class="form-btn"><a href="#" class="btn" onclick="gogo2();return false;">Перейти</a></div>
+                            </div>
+                        </form>
+
+                        <form id="f1" name="f1" style="margin-top:0">
+                            <div class="form-row">
+                                <div class="form-label form-label-4">ИНН:</div>
+                                <div class="form-field form-field-5">
+                                    <div class="form-input"><input id="tags"></div>
+                                </div>
+                                <div class="form-field form-field-5" style="margin-left:30px">
+                                    <div class="form-select">
+                                        <select name="inn" id="inn">
+                                            <option value="1">1 Все</option>
+                                            <option value="2304069826">2304069826 ООО «Карго-Плюс»</option>
+                                            <option value="6164319090">6164319090 НПО Монолит</option>
+                                            <option value="9102024423">9102024423 СМТ-КРЫМ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-btn"><a href="#" class="btn" onclick="gogo();return false;">Выбрать</a></div>
                             </div>
 
-                            <div class="page-size">
-                                <div class="page-size-title">Показывать записей на странице:</div>
-                                <div class="form-select">
-                                    <select name="pagesize">
-                                        <option value="10">10</option>
-                                        <option value="20">20</option>
-                                        <option value="50">50</option>
-                                        <option value="100">100</option>
-                                    </select>
+                            <div class="form-row">
+                                <div class="form-label form-label-4">Cумма заказа</div>
+                                <div style="float:left; width:30px; font-weight:bold; text-transform:uppercase; line-height:40px">от</div>
+                                <div class="form-field" style="width:140px">
+                                    <div class="form-input"><input id="pot" name="pot" value=""></div>
+                                </div>
+                                <div style="float:left; padding:0 0 0 30px; width:30px; font-weight:bold; text-transform:uppercase; line-height:40px">до</div>
+                                <div class="form-field" style="width:140px">
+                                    <div class="form-input"><input id="pto" name="pto" value=""></div>
                                 </div>
                             </div>
+
+                            <div class="form-row">
+                                <div class="form-label form-label-4">Номер ГТС</div>
+                                <div class="form-field">
+                                    <div class="form-input"><input id="grz" name="grz" value=""></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label form-label-4">Паром</div>
+                                <div class="form-field">
+                                    <div class="form-select">
+                                        <select name="fboat" id="fboat" data-placeholder="Выберите">
+                                            <option value="" selected=""></option>
+                                            <option value="2"> Севастополь</option>
+                                            <option value="3"> Олимпиада</option>
+                                            <option value="4"> Крым</option>
+                                            <option value="5"> Глюкофилоуса</option>
+                                            <option value="6"> Протопорос</option>
+                                            <option value="7"> Аксененко</option>
+                                            <option value="8"> Победа</option>
+                                            <option value="9"> Майор Чапичев</option>
+                                            <option value="10"> Керчинский 2</option>
+                                            <option value="11"> Ейск</option>
+                                            <option value="100"> МАРИЯ</option>
+                                            <option value="101"> ЛАВРЕНТИЙ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label form-label-4">Направление</div>
+                                <div class="form-field">
+                                    <div class="form-select">
+                                        <select name="direction" id="direction">
+                                            <option value="1"> ПОРТ КМРП - ПОРТ КАВКАЗ</option>
+                                            <option value="2"> ПОРТ КАВКАЗ - ПОРТ КМРП</option>
+                                            <option value="" selected=""> Все</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label form-label-4">Посадочный талон</div>
+                                <div class="form-field">
+                                    <div class="form-input"><input id="pt" name="pt" value=""></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label form-label-4">Дата отправления(плановая):</div>
+                                <div class="form-field form-field-5">
+                                    <div class="form-date"><input type="date"  id="startd" name="startd" value=""></div>
+                                </div>
+                                <div class="form-field-sep">—</div>
+                                <div class="form-field form-field-5">
+                                    <div class="form-date"><input type="date" id="endd" name="endd" value=""></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label form-label-4">Дата фактического проезда:</div>
+                                <div class="form-field form-field-5">
+                                    <div class="form-date"><input type="date"  id="startf" name="startf" value=""></div>
+                                </div>
+                                <div class="form-field-sep">—</div>
+                                <div class="form-field form-field-5">
+                                    <div class="form-date"><input type="date" id="endf" name="endf" value=""></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-label form-label-4">Статус:</div>
+                                <div class="form-field">
+                                    <div class="form-select">
+                                        <select name="status">
+                                            <option style="background-color:#a65e2e;" value="1">Бронь отменена</option>
+                                            <option style="background-color:#cf5b25;" value="2">Возврат средств</option>
+                                            <option style="background-color:#5fc0db;" value="3">Частичный возврат средств</option>
+                                            <option style="background-color:#efc5db;" value="4">Средства возвращены</option>
+                                            <option style="background-color:#dda0dd;" value="5">Оплачено</option>
+                                            <option style="background-color:0;" value="6">Ожидает оплату</option>
+                                            <option style="background-color:#00009a;" value="7">Услуга оказана частично</option>
+                                            <option style="background-color:#00fa9a;" value="8">Услуга оказана</option>
+                                            <option style="background-color:#ff3867;" value="9">Отправлен на доплату</option>
+                                            <option style="background-color:#fffa9a;" value="10">Зарегистрирован</option>
+                                            <option style="background-color:#00fa9a;" value="11">В очереди</option>
+                                            <option style="background-color:#00faff;" value="12">На накопителе</option>
+                                            <option style="background-color:#aafaff;" value="13">На досмотре</option>
+                                            <option style="background-color:#aafaff;" value="14">Отправлен на погрузку</option>
+                                            <option style="background-color:#00fa9a;" value="15">Услуга оказана</option>
+                                            <option style="background-color:#ee5d11;" value="16">Отправлен в порт</option>
+                                            <option style="background-color:;" selected="" value="0">Все</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-submit"><input type="submit" value="Фильтровать" /></div>
+
+                        </form>
+
+                        <div class="filter-toggle">
+                            <a href="#" data-text="Показать фильтр" class="active">Свернуть фильтр</a>
                         </div>
 
                         <table class="table-info">
